@@ -1,0 +1,1384 @@
+[0m12:04:59.053808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108943280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109884730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098738e0>]}
+
+
+============================== 12:04:59.057966 | d56478d6-6257-426a-8e27-a9c717e60d5b ==============================
+[0m12:04:59.057966 [info ] [MainThread]: Running with dbt=1.10.22
+[0m12:04:59.058541 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --profiles-dir .', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'partial_parse': 'True', 'introspect': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'profiles_dir': '.', 'cache_selected_only': 'False', 'use_colors': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'version_check': 'True', 'no_print': 'None', 'quiet': 'False', 'warn_error': 'None', 'static_parser': 'True', 'write_json': 'True', 'log_path': '/Users/preetraut/Documents/saas-revenue-ai-analytics/logs', 'debug': 'False'}
+[0m12:04:59.062785 [error] [MainThread]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  The profiles.yml file at ./profiles.yml is empty
+  
+[0m12:04:59.084963 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.058997292, "process_in_blocks": "0", "process_kernel_time": 0.307923, "process_mem_max_rss": "104153088", "process_out_blocks": "0", "process_user_time": 1.372205}
+[0m12:04:59.085581 [debug] [MainThread]: Command `dbt run` failed at 12:04:59.085469 after 0.06 seconds
+[0m12:04:59.085964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108943280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10996a1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10996a730>]}
+[0m12:04:59.086364 [debug] [MainThread]: Flushing usage events
+[0m12:04:59.725819 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:06:14.066718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b56ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108bed160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108bed490>]}
+
+
+============================== 12:06:14.071300 | b97ffd1a-d155-4565-8167-c3b72ef82061 ==============================
+[0m12:06:14.071300 [info ] [MainThread]: Running with dbt=1.10.22
+[0m12:06:14.071900 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'empty': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'partial_parse': 'True', 'use_colors': 'True', 'log_path': '/Users/preetraut/Documents/saas-revenue-ai-analytics/logs', 'quiet': 'False', 'cache_selected_only': 'False', 'profiles_dir': '.', 'version_check': 'True', 'fail_fast': 'False', 'introspect': 'True', 'no_print': 'None', 'static_parser': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'warn_error': 'None', 'invocation_command': 'dbt run --profiles-dir .', 'target_path': 'None'}
+[0m12:06:14.339835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108476700>]}
+[0m12:06:14.402492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b97dc0>]}
+[0m12:06:14.405081 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m12:06:14.551465 [debug] [MainThread]: checksum: 04c83ee057a648a2f8e380c895ffead170732fa039f068d62b9d36aaeefaf7cc, vars: {}, profile: , target: , version: 1.10.22
+[0m12:06:14.552217 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:06:14.552582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e3e130>]}
+[0m12:06:15.865945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109505130>]}
+[0m12:06:15.958183 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/manifest.json
+[0m12:06:15.960096 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/semantic_manifest.json
+[0m12:06:15.976298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109383520>]}
+[0m12:06:15.976890 [info ] [MainThread]: Found 3 models, 7 data tests, 456 macros
+[0m12:06:15.977246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109492610>]}
+[0m12:06:15.978628 [info ] [MainThread]: 
+[0m12:06:15.978981 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:06:15.979263 [info ] [MainThread]: 
+[0m12:06:15.979715 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:06:15.984854 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_saas_analytics'
+[0m12:06:16.094363 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics"
+[0m12:06:16.094832 [debug] [ThreadPool]: On list_saas_analytics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "list_saas_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"saas_analytics"'
+    
+  
+  
+[0m12:06:16.095142 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:06:16.117556 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m12:06:16.119275 [debug] [ThreadPool]: On list_saas_analytics: Close
+[0m12:06:16.120032 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_saas_analytics, now create_saas_analytics_main)
+[0m12:06:16.120480 [debug] [ThreadPool]: Creating schema "database: "saas_analytics"
+schema: "main"
+"
+[0m12:06:16.127515 [debug] [ThreadPool]: Using duckdb connection "create_saas_analytics_main"
+[0m12:06:16.127954 [debug] [ThreadPool]: On create_saas_analytics_main: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "create_saas_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='saas_analytics'
+        and type='sqlite'
+    
+  
+[0m12:06:16.128260 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:06:16.129484 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:06:16.130816 [debug] [ThreadPool]: Using duckdb connection "create_saas_analytics_main"
+[0m12:06:16.131155 [debug] [ThreadPool]: On create_saas_analytics_main: BEGIN
+[0m12:06:16.131638 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:06:16.131934 [debug] [ThreadPool]: Using duckdb connection "create_saas_analytics_main"
+[0m12:06:16.132220 [debug] [ThreadPool]: On create_saas_analytics_main: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "create_saas_analytics_main"} */
+
+    
+    
+        create schema if not exists "saas_analytics"."main"
+    
+[0m12:06:16.132657 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:06:16.133435 [debug] [ThreadPool]: On create_saas_analytics_main: COMMIT
+[0m12:06:16.133739 [debug] [ThreadPool]: Using duckdb connection "create_saas_analytics_main"
+[0m12:06:16.134010 [debug] [ThreadPool]: On create_saas_analytics_main: COMMIT
+[0m12:06:16.134414 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:06:16.134705 [debug] [ThreadPool]: On create_saas_analytics_main: Close
+[0m12:06:16.135905 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_saas_analytics_main, now list_saas_analytics_main)
+[0m12:06:16.141915 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics_main"
+[0m12:06:16.142308 [debug] [ThreadPool]: On list_saas_analytics_main: BEGIN
+[0m12:06:16.142586 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:06:16.143116 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:06:16.143395 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics_main"
+[0m12:06:16.143684 [debug] [ThreadPool]: On list_saas_analytics_main: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "list_saas_analytics_main"} */
+select
+      'saas_analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'saas_analytics'
+  
+[0m12:06:16.154958 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m12:06:16.156523 [debug] [ThreadPool]: On list_saas_analytics_main: ROLLBACK
+[0m12:06:16.158409 [debug] [ThreadPool]: Failed to rollback 'list_saas_analytics_main'
+[0m12:06:16.158762 [debug] [ThreadPool]: On list_saas_analytics_main: Close
+[0m12:06:16.159623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109492100>]}
+[0m12:06:16.160097 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:06:16.160395 [debug] [MainThread]: On master: BEGIN
+[0m12:06:16.160666 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:06:16.161188 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:06:16.161469 [debug] [MainThread]: On master: COMMIT
+[0m12:06:16.161735 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:06:16.161997 [debug] [MainThread]: On master: COMMIT
+[0m12:06:16.162366 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:06:16.162649 [debug] [MainThread]: On master: Close
+[0m12:06:16.164704 [debug] [Thread-1  ]: Began running node model.saas_revenue_analytics.stg_customers
+[0m12:06:16.165244 [info ] [Thread-1  ]: 1 of 3 START sql view model main.stg_customers ................................. [RUN]
+[0m12:06:16.165849 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_saas_analytics_main, now model.saas_revenue_analytics.stg_customers)
+[0m12:06:16.166203 [debug] [Thread-1  ]: Began compiling node model.saas_revenue_analytics.stg_customers
+[0m12:06:16.173529 [debug] [Thread-1  ]: Writing injected SQL for node "model.saas_revenue_analytics.stg_customers"
+[0m12:06:16.175620 [debug] [Thread-1  ]: Began executing node model.saas_revenue_analytics.stg_customers
+[0m12:06:16.207557 [debug] [Thread-1  ]: Writing runtime sql for node "model.saas_revenue_analytics.stg_customers"
+[0m12:06:16.209322 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:06:16.209761 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: BEGIN
+[0m12:06:16.210105 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:16.210853 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:16.211297 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:06:16.211671 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_customers"} */
+
+  
+  create view "saas_analytics"."main"."stg_customers__dbt_tmp" as (
+    select
+    customer_id,
+    region,
+    segment,
+    signup_date
+from raw_customers
+  );
+
+[0m12:06:16.212465 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:06:16.219361 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:06:16.219822 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_customers"} */
+alter view "saas_analytics"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m12:06:16.220788 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:16.232118 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: COMMIT
+[0m12:06:16.232646 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:06:16.232998 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: COMMIT
+[0m12:06:16.234884 [debug] [Thread-1  ]: SQL status: OK in 0.002 seconds
+[0m12:06:16.241261 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:06:16.241742 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_customers"} */
+
+      drop view if exists "saas_analytics"."main"."stg_customers__dbt_backup" cascade
+    
+[0m12:06:16.242561 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:06:16.245492 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: Close
+[0m12:06:16.247655 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095d0190>]}
+[0m12:06:16.248359 [info ] [Thread-1  ]: 1 of 3 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.08s]
+[0m12:06:16.248912 [debug] [Thread-1  ]: Finished running node model.saas_revenue_analytics.stg_customers
+[0m12:06:16.249293 [debug] [Thread-1  ]: Began running node model.saas_revenue_analytics.stg_subscriptions
+[0m12:06:16.249782 [info ] [Thread-1  ]: 2 of 3 START sql view model main.stg_subscriptions ............................. [RUN]
+[0m12:06:16.250228 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.saas_revenue_analytics.stg_customers, now model.saas_revenue_analytics.stg_subscriptions)
+[0m12:06:16.250574 [debug] [Thread-1  ]: Began compiling node model.saas_revenue_analytics.stg_subscriptions
+[0m12:06:16.252870 [debug] [Thread-1  ]: Writing injected SQL for node "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:06:16.253609 [debug] [Thread-1  ]: Began executing node model.saas_revenue_analytics.stg_subscriptions
+[0m12:06:16.258235 [debug] [Thread-1  ]: Writing runtime sql for node "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:06:16.259136 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:06:16.259494 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: BEGIN
+[0m12:06:16.259808 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:16.260476 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:16.260812 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:06:16.261145 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_subscriptions"} */
+
+  
+  create view "saas_analytics"."main"."stg_subscriptions__dbt_tmp" as (
+    select
+    subscription_id,
+    customer_id,
+    plan,
+    monthly_revenue,
+    is_churned,
+    created_at
+from raw_subscriptions
+  );
+
+[0m12:06:16.261784 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:06:16.265148 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:06:16.265577 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_subscriptions"} */
+alter view "saas_analytics"."main"."stg_subscriptions__dbt_tmp" rename to "stg_subscriptions"
+[0m12:06:16.266220 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:06:16.267956 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: COMMIT
+[0m12:06:16.268847 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:06:16.269309 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: COMMIT
+[0m12:06:16.270337 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:16.275448 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:06:16.275956 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_subscriptions"} */
+
+      drop view if exists "saas_analytics"."main"."stg_subscriptions__dbt_backup" cascade
+    
+[0m12:06:16.276617 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:06:16.277967 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: Close
+[0m12:06:16.278575 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c620d0>]}
+[0m12:06:16.279273 [info ] [Thread-1  ]: 2 of 3 OK created sql view model main.stg_subscriptions ........................ [[32mOK[0m in 0.03s]
+[0m12:06:16.279883 [debug] [Thread-1  ]: Finished running node model.saas_revenue_analytics.stg_subscriptions
+[0m12:06:16.280670 [debug] [Thread-1  ]: Began running node model.saas_revenue_analytics.revenue_metrics
+[0m12:06:16.281396 [info ] [Thread-1  ]: 3 of 3 START sql table model main.revenue_metrics .............................. [RUN]
+[0m12:06:16.282181 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.saas_revenue_analytics.stg_subscriptions, now model.saas_revenue_analytics.revenue_metrics)
+[0m12:06:16.282665 [debug] [Thread-1  ]: Began compiling node model.saas_revenue_analytics.revenue_metrics
+[0m12:06:16.287203 [debug] [Thread-1  ]: Writing injected SQL for node "model.saas_revenue_analytics.revenue_metrics"
+[0m12:06:16.289744 [debug] [Thread-1  ]: Began executing node model.saas_revenue_analytics.revenue_metrics
+[0m12:06:16.327240 [debug] [Thread-1  ]: Writing runtime sql for node "model.saas_revenue_analytics.revenue_metrics"
+[0m12:06:16.328307 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:06:16.328700 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: BEGIN
+[0m12:06:16.329640 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:16.331024 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:16.331775 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:06:16.332201 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.revenue_metrics"} */
+
+  
+    
+    
+
+    create  table
+      "saas_analytics"."main"."revenue_metrics__dbt_tmp"
+  
+    as (
+      select
+    c.region,
+    c.segment,
+    count(distinct c.customer_id) as total_customers,
+    sum(s.monthly_revenue) as total_mrr,
+    sum(s.monthly_revenue) * 12 as total_arr,
+    sum(case when s.is_churned = 1 then 1 else 0 end) as churned_customers,
+    round(
+        sum(case when s.is_churned = 1 then 1 else 0 end) * 100.0
+        / count(distinct c.customer_id),
+        2
+    ) as churn_rate_percent,
+    avg(s.monthly_revenue) as average_revenue_per_customer
+from "saas_analytics"."main"."stg_customers" c
+join "saas_analytics"."main"."stg_subscriptions" s
+    on c.customer_id = s.customer_id
+group by
+    c.region,
+    c.segment
+    );
+  
+  
+[0m12:06:16.365454 [debug] [Thread-1  ]: SQL status: OK in 0.032 seconds
+[0m12:06:16.368988 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:06:16.369385 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.revenue_metrics"} */
+alter table "saas_analytics"."main"."revenue_metrics__dbt_tmp" rename to "revenue_metrics"
+[0m12:06:16.370006 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:06:16.376259 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: COMMIT
+[0m12:06:16.378100 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:06:16.378484 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: COMMIT
+[0m12:06:16.379436 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:16.382227 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:06:16.382607 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.revenue_metrics"} */
+
+      drop table if exists "saas_analytics"."main"."revenue_metrics__dbt_backup" cascade
+    
+[0m12:06:16.383178 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:06:16.384578 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: Close
+[0m12:06:16.385192 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b97ffd1a-d155-4565-8167-c3b72ef82061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10928aeb0>]}
+[0m12:06:16.385818 [info ] [Thread-1  ]: 3 of 3 OK created sql table model main.revenue_metrics ......................... [[32mOK[0m in 0.10s]
+[0m12:06:16.386353 [debug] [Thread-1  ]: Finished running node model.saas_revenue_analytics.revenue_metrics
+[0m12:06:16.387389 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:06:16.387778 [debug] [MainThread]: On master: BEGIN
+[0m12:06:16.388072 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:06:16.388663 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:06:16.388968 [debug] [MainThread]: On master: COMMIT
+[0m12:06:16.389247 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:06:16.389514 [debug] [MainThread]: On master: COMMIT
+[0m12:06:16.389915 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:06:16.390202 [debug] [MainThread]: On master: Close
+[0m12:06:16.390611 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:06:16.390956 [debug] [MainThread]: Connection 'model.saas_revenue_analytics.revenue_metrics' was properly closed.
+[0m12:06:16.391389 [info ] [MainThread]: 
+[0m12:06:16.391777 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.41 seconds (0.41s).
+[0m12:06:16.392797 [debug] [MainThread]: Command end result
+[0m12:06:16.420089 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/manifest.json
+[0m12:06:16.422284 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/semantic_manifest.json
+[0m12:06:16.429588 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/run_results.json
+[0m12:06:16.429977 [info ] [MainThread]: 
+[0m12:06:16.430359 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:06:16.430657 [info ] [MainThread]: 
+[0m12:06:16.430974 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m12:06:16.434362 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.4415507, "process_in_blocks": "0", "process_kernel_time": 0.421863, "process_mem_max_rss": "154894336", "process_out_blocks": "0", "process_user_time": 3.305411}
+[0m12:06:16.434770 [debug] [MainThread]: Command `dbt run` succeeded at 12:06:16.434694 after 2.44 seconds
+[0m12:06:16.435124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b56ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e1c790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108476700>]}
+[0m12:06:16.435486 [debug] [MainThread]: Flushing usage events
+[0m12:06:17.035442 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:06:30.242825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4a6fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b53b1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b53b4f0>]}
+
+
+============================== 12:06:30.247074 | cb9a0408-5cac-40a2-b510-8f3e54640117 ==============================
+[0m12:06:30.247074 [info ] [MainThread]: Running with dbt=1.10.22
+[0m12:06:30.247644 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'profiles_dir': '.', 'partial_parse': 'True', 'log_path': '/Users/preetraut/Documents/saas-revenue-ai-analytics/logs', 'target_path': 'None', 'use_experimental_parser': 'False', 'debug': 'False', 'log_cache_events': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'quiet': 'False', 'invocation_command': 'dbt test --profiles-dir .', 'static_parser': 'True', 'introspect': 'True', 'no_print': 'None', 'log_format': 'default', 'version_check': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m12:06:30.513345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cb9a0408-5cac-40a2-b510-8f3e54640117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b62bf40>]}
+[0m12:06:30.572605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cb9a0408-5cac-40a2-b510-8f3e54640117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5bf970>]}
+[0m12:06:30.575089 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m12:06:30.723378 [debug] [MainThread]: checksum: 04c83ee057a648a2f8e380c895ffead170732fa039f068d62b9d36aaeefaf7cc, vars: {}, profile: , target: , version: 1.10.22
+[0m12:06:30.881415 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:06:30.881899 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:06:30.934741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cb9a0408-5cac-40a2-b510-8f3e54640117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb56130>]}
+[0m12:06:31.076857 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/manifest.json
+[0m12:06:31.079208 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/semantic_manifest.json
+[0m12:06:31.111898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cb9a0408-5cac-40a2-b510-8f3e54640117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b62b3a0>]}
+[0m12:06:31.112922 [info ] [MainThread]: Found 3 models, 7 data tests, 456 macros
+[0m12:06:31.113593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cb9a0408-5cac-40a2-b510-8f3e54640117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adcf6d0>]}
+[0m12:06:31.115917 [info ] [MainThread]: 
+[0m12:06:31.116463 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:06:31.116906 [info ] [MainThread]: 
+[0m12:06:31.117569 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:06:31.126855 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_saas_analytics_main'
+[0m12:06:31.253175 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics_main"
+[0m12:06:31.254118 [debug] [ThreadPool]: On list_saas_analytics_main: BEGIN
+[0m12:06:31.254857 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:06:31.283978 [debug] [ThreadPool]: SQL status: OK in 0.029 seconds
+[0m12:06:31.284908 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics_main"
+[0m12:06:31.285678 [debug] [ThreadPool]: On list_saas_analytics_main: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "list_saas_analytics_main"} */
+select
+      'saas_analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'saas_analytics'
+  
+[0m12:06:31.321452 [debug] [ThreadPool]: SQL status: OK in 0.035 seconds
+[0m12:06:31.325174 [debug] [ThreadPool]: On list_saas_analytics_main: ROLLBACK
+[0m12:06:31.329037 [debug] [ThreadPool]: Failed to rollback 'list_saas_analytics_main'
+[0m12:06:31.329771 [debug] [ThreadPool]: On list_saas_analytics_main: Close
+[0m12:06:31.332579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cb9a0408-5cac-40a2-b510-8f3e54640117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b60abe0>]}
+[0m12:06:31.333621 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:06:31.334317 [debug] [MainThread]: On master: BEGIN
+[0m12:06:31.334947 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:06:31.336054 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:06:31.336738 [debug] [MainThread]: On master: COMMIT
+[0m12:06:31.337395 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:06:31.338021 [debug] [MainThread]: On master: COMMIT
+[0m12:06:31.338889 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:06:31.339534 [debug] [MainThread]: On master: Close
+[0m12:06:31.344381 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1
+[0m12:06:31.345366 [info ] [Thread-1  ]: 1 of 7 START test not_null_revenue_metrics_region .............................. [RUN]
+[0m12:06:31.346362 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_saas_analytics_main, now test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1)
+[0m12:06:31.347176 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1
+[0m12:06:31.385451 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"
+[0m12:06:31.387050 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1
+[0m12:06:31.420833 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"
+[0m12:06:31.422539 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"
+[0m12:06:31.423224 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1: BEGIN
+[0m12:06:31.423838 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:31.424877 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.425504 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"
+[0m12:06:31.426149 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select region
+from "saas_analytics"."main"."revenue_metrics"
+where region is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:06:31.428334 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.435984 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1: ROLLBACK
+[0m12:06:31.436891 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1'
+[0m12:06:31.437547 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1: Close
+[0m12:06:31.438579 [info ] [Thread-1  ]: 1 of 7 PASS not_null_revenue_metrics_region .................................... [[32mPASS[0m in 0.09s]
+[0m12:06:31.439537 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1
+[0m12:06:31.440224 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16
+[0m12:06:31.440970 [info ] [Thread-1  ]: 2 of 7 START test not_null_revenue_metrics_segment ............................. [RUN]
+[0m12:06:31.441738 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1, now test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16)
+[0m12:06:31.442364 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16
+[0m12:06:31.450265 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"
+[0m12:06:31.451725 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16
+[0m12:06:31.456931 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"
+[0m12:06:31.458498 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"
+[0m12:06:31.459219 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16: BEGIN
+[0m12:06:31.459812 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:31.460841 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.461460 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"
+[0m12:06:31.462086 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select segment
+from "saas_analytics"."main"."revenue_metrics"
+where segment is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:06:31.463262 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.465348 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16: ROLLBACK
+[0m12:06:31.466036 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16'
+[0m12:06:31.466544 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16: Close
+[0m12:06:31.467406 [info ] [Thread-1  ]: 2 of 7 PASS not_null_revenue_metrics_segment ................................... [[32mPASS[0m in 0.03s]
+[0m12:06:31.468196 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16
+[0m12:06:31.468970 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:06:31.469665 [info ] [Thread-1  ]: 3 of 7 START test not_null_stg_customers_customer_id ........................... [RUN]
+[0m12:06:31.470415 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16, now test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m12:06:31.470982 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:06:31.479336 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:06:31.480994 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:06:31.486115 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:06:31.487421 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:06:31.487982 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa: BEGIN
+[0m12:06:31.488473 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:31.489343 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.489996 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:06:31.490524 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "saas_analytics"."main"."stg_customers"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:06:31.491828 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.493986 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa: ROLLBACK
+[0m12:06:31.494658 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m12:06:31.495152 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa: Close
+[0m12:06:31.496011 [info ] [Thread-1  ]: 3 of 7 PASS not_null_stg_customers_customer_id ................................. [[32mPASS[0m in 0.03s]
+[0m12:06:31.496797 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:06:31.497358 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7
+[0m12:06:31.498039 [info ] [Thread-1  ]: 4 of 7 START test not_null_stg_subscriptions_customer_id ....................... [RUN]
+[0m12:06:31.498876 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7)
+[0m12:06:31.499446 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7
+[0m12:06:31.505984 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"
+[0m12:06:31.507186 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7
+[0m12:06:31.511608 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"
+[0m12:06:31.512873 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"
+[0m12:06:31.513449 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7: BEGIN
+[0m12:06:31.513948 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:31.514800 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.515291 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"
+[0m12:06:31.515802 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "saas_analytics"."main"."stg_subscriptions"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:06:31.517007 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.519026 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7: ROLLBACK
+[0m12:06:31.519659 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7'
+[0m12:06:31.520153 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7: Close
+[0m12:06:31.520961 [info ] [Thread-1  ]: 4 of 7 PASS not_null_stg_subscriptions_customer_id ............................. [[32mPASS[0m in 0.02s]
+[0m12:06:31.521713 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7
+[0m12:06:31.522255 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91
+[0m12:06:31.522931 [info ] [Thread-1  ]: 5 of 7 START test not_null_stg_subscriptions_subscription_id ................... [RUN]
+[0m12:06:31.523685 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7, now test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91)
+[0m12:06:31.524280 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91
+[0m12:06:31.532788 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"
+[0m12:06:31.533943 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91
+[0m12:06:31.538141 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"
+[0m12:06:31.539229 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"
+[0m12:06:31.539763 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91: BEGIN
+[0m12:06:31.540252 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:31.541147 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.541661 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"
+[0m12:06:31.542184 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select subscription_id
+from "saas_analytics"."main"."stg_subscriptions"
+where subscription_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:06:31.543505 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.545657 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91: ROLLBACK
+[0m12:06:31.546401 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91'
+[0m12:06:31.546945 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91: Close
+[0m12:06:31.547811 [info ] [Thread-1  ]: 5 of 7 PASS not_null_stg_subscriptions_subscription_id ......................... [[32mPASS[0m in 0.02s]
+[0m12:06:31.548576 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91
+[0m12:06:31.549122 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada
+[0m12:06:31.549705 [info ] [Thread-1  ]: 6 of 7 START test unique_stg_customers_customer_id ............................. [RUN]
+[0m12:06:31.550301 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91, now test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada)
+[0m12:06:31.550808 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada
+[0m12:06:31.561463 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"
+[0m12:06:31.562738 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada
+[0m12:06:31.567477 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"
+[0m12:06:31.569113 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"
+[0m12:06:31.569743 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada: BEGIN
+[0m12:06:31.570270 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:31.571137 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.571644 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"
+[0m12:06:31.572174 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "saas_analytics"."main"."stg_customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:06:31.579308 [debug] [Thread-1  ]: SQL status: OK in 0.006 seconds
+[0m12:06:31.581844 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada: ROLLBACK
+[0m12:06:31.582609 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada'
+[0m12:06:31.583153 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada: Close
+[0m12:06:31.584017 [info ] [Thread-1  ]: 6 of 7 PASS unique_stg_customers_customer_id ................................... [[32mPASS[0m in 0.03s]
+[0m12:06:31.584796 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada
+[0m12:06:31.585358 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e
+[0m12:06:31.585967 [info ] [Thread-1  ]: 7 of 7 START test unique_stg_subscriptions_subscription_id ..................... [RUN]
+[0m12:06:31.586645 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada, now test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e)
+[0m12:06:31.587196 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e
+[0m12:06:31.593823 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"
+[0m12:06:31.595162 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e
+[0m12:06:31.599475 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"
+[0m12:06:31.600686 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"
+[0m12:06:31.601222 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e: BEGIN
+[0m12:06:31.601711 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:06:31.602555 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:06:31.603052 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"
+[0m12:06:31.603574 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    subscription_id as unique_field,
+    count(*) as n_records
+
+from "saas_analytics"."main"."stg_subscriptions"
+where subscription_id is not null
+group by subscription_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:06:31.605854 [debug] [Thread-1  ]: SQL status: OK in 0.002 seconds
+[0m12:06:31.607897 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e: ROLLBACK
+[0m12:06:31.608563 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e'
+[0m12:06:31.609070 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e: Close
+[0m12:06:31.609896 [info ] [Thread-1  ]: 7 of 7 PASS unique_stg_subscriptions_subscription_id ........................... [[32mPASS[0m in 0.02s]
+[0m12:06:31.610762 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e
+[0m12:06:31.612324 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:06:31.612881 [debug] [MainThread]: On master: BEGIN
+[0m12:06:31.613327 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:06:31.614241 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:06:31.614699 [debug] [MainThread]: On master: COMMIT
+[0m12:06:31.615125 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:06:31.615532 [debug] [MainThread]: On master: COMMIT
+[0m12:06:31.616105 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:06:31.616533 [debug] [MainThread]: On master: Close
+[0m12:06:31.617115 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:06:31.617525 [debug] [MainThread]: Connection 'test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e' was properly closed.
+[0m12:06:31.617994 [info ] [MainThread]: 
+[0m12:06:31.618447 [info ] [MainThread]: Finished running 7 data tests in 0 hours 0 minutes and 0.50 seconds (0.50s).
+[0m12:06:31.620329 [debug] [MainThread]: Command end result
+[0m12:06:31.660863 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/manifest.json
+[0m12:06:31.663472 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/semantic_manifest.json
+[0m12:06:31.674332 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/run_results.json
+[0m12:06:31.674926 [info ] [MainThread]: 
+[0m12:06:31.675535 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:06:31.676018 [info ] [MainThread]: 
+[0m12:06:31.676514 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m12:06:31.681355 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.5090866, "process_in_blocks": "0", "process_kernel_time": 0.449134, "process_mem_max_rss": "144343040", "process_out_blocks": "0", "process_user_time": 2.634573}
+[0m12:06:31.682048 [debug] [MainThread]: Command `dbt test` succeeded at 12:06:31.681919 after 1.51 seconds
+[0m12:06:31.682599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4a6fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b62b1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b62b730>]}
+[0m12:06:31.683165 [debug] [MainThread]: Flushing usage events
+[0m12:06:32.260215 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:07:55.913474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a042eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0d9190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0d94c0>]}
+
+
+============================== 12:07:55.917810 | 3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2 ==============================
+[0m12:07:55.917810 [info ] [MainThread]: Running with dbt=1.10.22
+[0m12:07:55.918365 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'empty': 'False', 'static_parser': 'True', 'debug': 'False', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir .', 'fail_fast': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'profiles_dir': '.', 'no_print': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'log_path': '/Users/preetraut/Documents/saas-revenue-ai-analytics/logs', 'log_format': 'default', 'write_json': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None'}
+[0m12:07:56.123160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b162bb0>]}
+[0m12:07:56.180039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b179af0>]}
+[0m12:07:56.184674 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m12:07:56.311486 [debug] [MainThread]: checksum: 04c83ee057a648a2f8e380c895ffead170732fa039f068d62b9d36aaeefaf7cc, vars: {}, profile: , target: , version: 1.10.22
+[0m12:07:56.447289 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:07:56.447707 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:07:56.493576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6f9f10>]}
+[0m12:07:56.618372 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/manifest.json
+[0m12:07:56.620921 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/semantic_manifest.json
+[0m12:07:56.639588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b688820>]}
+[0m12:07:56.640162 [info ] [MainThread]: Found 3 models, 7 data tests, 456 macros
+[0m12:07:56.640520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6f9490>]}
+[0m12:07:56.641861 [info ] [MainThread]: 
+[0m12:07:56.642234 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:07:56.642530 [info ] [MainThread]: 
+[0m12:07:56.642986 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:07:56.648266 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_saas_analytics'
+[0m12:07:56.712579 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics"
+[0m12:07:56.713028 [debug] [ThreadPool]: On list_saas_analytics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "list_saas_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"saas_analytics"'
+    
+  
+  
+[0m12:07:56.713339 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:07:56.725916 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m12:07:56.727511 [debug] [ThreadPool]: On list_saas_analytics: Close
+[0m12:07:56.728153 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_saas_analytics, now create_saas_analytics_main)
+[0m12:07:56.728601 [debug] [ThreadPool]: Creating schema "database: "saas_analytics"
+schema: "main"
+"
+[0m12:07:56.735292 [debug] [ThreadPool]: Using duckdb connection "create_saas_analytics_main"
+[0m12:07:56.735641 [debug] [ThreadPool]: On create_saas_analytics_main: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "create_saas_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='saas_analytics'
+        and type='sqlite'
+    
+  
+[0m12:07:56.735944 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:07:56.736839 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m12:07:56.738125 [debug] [ThreadPool]: Using duckdb connection "create_saas_analytics_main"
+[0m12:07:56.738427 [debug] [ThreadPool]: On create_saas_analytics_main: BEGIN
+[0m12:07:56.738821 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:07:56.739098 [debug] [ThreadPool]: Using duckdb connection "create_saas_analytics_main"
+[0m12:07:56.739379 [debug] [ThreadPool]: On create_saas_analytics_main: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "create_saas_analytics_main"} */
+
+    
+    
+        create schema if not exists "saas_analytics"."main"
+    
+[0m12:07:56.739840 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:07:56.740673 [debug] [ThreadPool]: On create_saas_analytics_main: COMMIT
+[0m12:07:56.741001 [debug] [ThreadPool]: Using duckdb connection "create_saas_analytics_main"
+[0m12:07:56.741295 [debug] [ThreadPool]: On create_saas_analytics_main: COMMIT
+[0m12:07:56.741706 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:07:56.742007 [debug] [ThreadPool]: On create_saas_analytics_main: Close
+[0m12:07:56.743024 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_saas_analytics_main, now list_saas_analytics_main)
+[0m12:07:56.748645 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics_main"
+[0m12:07:56.748984 [debug] [ThreadPool]: On list_saas_analytics_main: BEGIN
+[0m12:07:56.749272 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:07:56.749744 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:07:56.750027 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics_main"
+[0m12:07:56.750324 [debug] [ThreadPool]: On list_saas_analytics_main: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "list_saas_analytics_main"} */
+select
+      'saas_analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'saas_analytics'
+  
+[0m12:07:56.760968 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m12:07:56.762400 [debug] [ThreadPool]: On list_saas_analytics_main: ROLLBACK
+[0m12:07:56.764123 [debug] [ThreadPool]: Failed to rollback 'list_saas_analytics_main'
+[0m12:07:56.764425 [debug] [ThreadPool]: On list_saas_analytics_main: Close
+[0m12:07:56.765657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9db640>]}
+[0m12:07:56.766145 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:07:56.766455 [debug] [MainThread]: On master: BEGIN
+[0m12:07:56.766731 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:07:56.767306 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:07:56.767610 [debug] [MainThread]: On master: COMMIT
+[0m12:07:56.767909 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:07:56.768186 [debug] [MainThread]: On master: COMMIT
+[0m12:07:56.768601 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:07:56.768946 [debug] [MainThread]: On master: Close
+[0m12:07:56.771116 [debug] [Thread-1  ]: Began running node model.saas_revenue_analytics.stg_customers
+[0m12:07:56.771620 [info ] [Thread-1  ]: 1 of 3 START sql view model main.stg_customers ................................. [RUN]
+[0m12:07:56.772056 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_saas_analytics_main, now model.saas_revenue_analytics.stg_customers)
+[0m12:07:56.772406 [debug] [Thread-1  ]: Began compiling node model.saas_revenue_analytics.stg_customers
+[0m12:07:56.779602 [debug] [Thread-1  ]: Writing injected SQL for node "model.saas_revenue_analytics.stg_customers"
+[0m12:07:56.780434 [debug] [Thread-1  ]: Began executing node model.saas_revenue_analytics.stg_customers
+[0m12:07:56.810907 [debug] [Thread-1  ]: Writing runtime sql for node "model.saas_revenue_analytics.stg_customers"
+[0m12:07:56.811774 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:07:56.812145 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: BEGIN
+[0m12:07:56.812476 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:07:56.813077 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:07:56.813412 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:07:56.813751 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_customers"} */
+
+  
+  create view "saas_analytics"."main"."stg_customers__dbt_tmp" as (
+    select
+    customer_id,
+    region,
+    segment,
+    signup_date
+from raw_customers
+  );
+
+[0m12:07:56.814322 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.821704 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:07:56.822154 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_customers"} */
+alter view "saas_analytics"."main"."stg_customers" rename to "stg_customers__dbt_backup"
+[0m12:07:56.823384 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:07:56.827165 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:07:56.827577 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_customers"} */
+alter view "saas_analytics"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m12:07:56.828220 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.839863 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: COMMIT
+[0m12:07:56.840340 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:07:56.840685 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: COMMIT
+[0m12:07:56.841761 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:07:56.847560 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_customers"
+[0m12:07:56.847951 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_customers"} */
+
+      drop view if exists "saas_analytics"."main"."stg_customers__dbt_backup" cascade
+    
+[0m12:07:56.848634 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.850959 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_customers: Close
+[0m12:07:56.852780 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9db640>]}
+[0m12:07:56.853391 [info ] [Thread-1  ]: 1 of 3 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.08s]
+[0m12:07:56.853922 [debug] [Thread-1  ]: Finished running node model.saas_revenue_analytics.stg_customers
+[0m12:07:56.854303 [debug] [Thread-1  ]: Began running node model.saas_revenue_analytics.stg_subscriptions
+[0m12:07:56.854786 [info ] [Thread-1  ]: 2 of 3 START sql view model main.stg_subscriptions ............................. [RUN]
+[0m12:07:56.855217 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.saas_revenue_analytics.stg_customers, now model.saas_revenue_analytics.stg_subscriptions)
+[0m12:07:56.855563 [debug] [Thread-1  ]: Began compiling node model.saas_revenue_analytics.stg_subscriptions
+[0m12:07:56.857812 [debug] [Thread-1  ]: Writing injected SQL for node "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:07:56.858633 [debug] [Thread-1  ]: Began executing node model.saas_revenue_analytics.stg_subscriptions
+[0m12:07:56.862704 [debug] [Thread-1  ]: Writing runtime sql for node "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:07:56.863723 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:07:56.864124 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: BEGIN
+[0m12:07:56.864482 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:07:56.865163 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:07:56.865498 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:07:56.865838 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_subscriptions"} */
+
+  
+  create view "saas_analytics"."main"."stg_subscriptions__dbt_tmp" as (
+    select
+    subscription_id,
+    customer_id,
+    plan,
+    monthly_revenue,
+    is_churned,
+    created_at
+from raw_subscriptions
+  );
+
+[0m12:07:56.866442 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.869737 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:07:56.870113 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_subscriptions"} */
+alter view "saas_analytics"."main"."stg_subscriptions" rename to "stg_subscriptions__dbt_backup"
+[0m12:07:56.870762 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.874769 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:07:56.875236 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_subscriptions"} */
+alter view "saas_analytics"."main"."stg_subscriptions__dbt_tmp" rename to "stg_subscriptions"
+[0m12:07:56.877113 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.878643 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: COMMIT
+[0m12:07:56.879006 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:07:56.879339 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: COMMIT
+[0m12:07:56.879943 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.882468 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.stg_subscriptions"
+[0m12:07:56.882829 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.stg_subscriptions"} */
+
+      drop view if exists "saas_analytics"."main"."stg_subscriptions__dbt_backup" cascade
+    
+[0m12:07:56.883405 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.884541 [debug] [Thread-1  ]: On model.saas_revenue_analytics.stg_subscriptions: Close
+[0m12:07:56.885066 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9db640>]}
+[0m12:07:56.885647 [info ] [Thread-1  ]: 2 of 3 OK created sql view model main.stg_subscriptions ........................ [[32mOK[0m in 0.03s]
+[0m12:07:56.886167 [debug] [Thread-1  ]: Finished running node model.saas_revenue_analytics.stg_subscriptions
+[0m12:07:56.886764 [debug] [Thread-1  ]: Began running node model.saas_revenue_analytics.revenue_metrics
+[0m12:07:56.887328 [info ] [Thread-1  ]: 3 of 3 START sql table model main.revenue_metrics .............................. [RUN]
+[0m12:07:56.887863 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.saas_revenue_analytics.stg_subscriptions, now model.saas_revenue_analytics.revenue_metrics)
+[0m12:07:56.888246 [debug] [Thread-1  ]: Began compiling node model.saas_revenue_analytics.revenue_metrics
+[0m12:07:56.892305 [debug] [Thread-1  ]: Writing injected SQL for node "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.893340 [debug] [Thread-1  ]: Began executing node model.saas_revenue_analytics.revenue_metrics
+[0m12:07:56.913968 [debug] [Thread-1  ]: Writing runtime sql for node "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.914835 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.915204 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: BEGIN
+[0m12:07:56.915535 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:07:56.916137 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:07:56.916471 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.916832 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.revenue_metrics"} */
+
+  
+    
+    
+
+    create  table
+      "saas_analytics"."main"."revenue_metrics__dbt_tmp"
+  
+    as (
+      select
+    c.region,
+    c.segment,
+    count(distinct c.customer_id) as total_customers,
+    sum(s.monthly_revenue) as total_mrr,
+    sum(s.monthly_revenue) * 12 as total_arr,
+    sum(case when s.is_churned = 1 then 1 else 0 end) as churned_customers,
+    round(
+        sum(case when s.is_churned = 1 then 1 else 0 end) * 100.0
+        / count(distinct c.customer_id),
+        2
+    ) as churn_rate_percent,
+    avg(s.monthly_revenue) as average_revenue_per_customer
+from "saas_analytics"."main"."stg_customers" c
+join "saas_analytics"."main"."stg_subscriptions" s
+    on c.customer_id = s.customer_id
+group by
+    c.region,
+    c.segment
+    );
+  
+  
+[0m12:07:56.929071 [debug] [Thread-1  ]: SQL status: OK in 0.012 seconds
+[0m12:07:56.934579 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.934987 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.revenue_metrics"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'revenue_metrics'
+  
+[0m12:07:56.935770 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.936918 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.937292 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.revenue_metrics"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'revenue_metrics'
+  
+[0m12:07:56.938025 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.941777 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.942236 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.revenue_metrics"} */
+alter table "saas_analytics"."main"."revenue_metrics" rename to "revenue_metrics__dbt_backup"
+[0m12:07:56.942878 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.945918 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.946279 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.revenue_metrics"} */
+alter table "saas_analytics"."main"."revenue_metrics__dbt_tmp" rename to "revenue_metrics"
+[0m12:07:56.946793 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.951654 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: COMMIT
+[0m12:07:56.952033 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.952367 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: COMMIT
+[0m12:07:56.953300 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:07:56.956135 [debug] [Thread-1  ]: Using duckdb connection "model.saas_revenue_analytics.revenue_metrics"
+[0m12:07:56.957007 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "model.saas_revenue_analytics.revenue_metrics"} */
+
+      drop table if exists "saas_analytics"."main"."revenue_metrics__dbt_backup" cascade
+    
+[0m12:07:56.957945 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:07:56.960533 [debug] [Thread-1  ]: On model.saas_revenue_analytics.revenue_metrics: Close
+[0m12:07:56.962680 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3bb1d390-2f6b-4fd6-93e1-8cc5cca817a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc01b80>]}
+[0m12:07:56.963316 [info ] [Thread-1  ]: 3 of 3 OK created sql table model main.revenue_metrics ......................... [[32mOK[0m in 0.07s]
+[0m12:07:56.963842 [debug] [Thread-1  ]: Finished running node model.saas_revenue_analytics.revenue_metrics
+[0m12:07:56.964742 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:07:56.966150 [debug] [MainThread]: On master: BEGIN
+[0m12:07:56.966441 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:07:56.966946 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:07:56.967224 [debug] [MainThread]: On master: COMMIT
+[0m12:07:56.967502 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:07:56.967772 [debug] [MainThread]: On master: COMMIT
+[0m12:07:56.968182 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:07:56.968531 [debug] [MainThread]: On master: Close
+[0m12:07:56.968911 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:07:56.969187 [debug] [MainThread]: Connection 'model.saas_revenue_analytics.revenue_metrics' was properly closed.
+[0m12:07:56.969529 [info ] [MainThread]: 
+[0m12:07:56.969842 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.33 seconds (0.33s).
+[0m12:07:56.970692 [debug] [MainThread]: Command end result
+[0m12:07:56.996976 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/manifest.json
+[0m12:07:56.998665 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/semantic_manifest.json
+[0m12:07:57.005147 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/run_results.json
+[0m12:07:57.005565 [info ] [MainThread]: 
+[0m12:07:57.006065 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:07:57.006518 [info ] [MainThread]: 
+[0m12:07:57.006872 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m12:07:57.010629 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.1729772, "process_in_blocks": "0", "process_kernel_time": 0.329858, "process_mem_max_rss": "156073984", "process_out_blocks": "0", "process_user_time": 2.183756}
+[0m12:07:57.011074 [debug] [MainThread]: Command `dbt run` succeeded at 12:07:57.010999 after 1.17 seconds
+[0m12:07:57.011456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a042eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b379610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b6e4340>]}
+[0m12:07:57.011846 [debug] [MainThread]: Flushing usage events
+[0m12:07:57.858575 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:07:59.541416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a372eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b409130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b409460>]}
+
+
+============================== 12:07:59.545217 | 52814211-2573-4d83-ad02-851757804cb2 ==============================
+[0m12:07:59.545217 [info ] [MainThread]: Running with dbt=1.10.22
+[0m12:07:59.545783 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'profiles_dir': '.', 'printer_width': '80', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'introspect': 'True', 'version_check': 'True', 'partial_parse': 'True', 'log_format': 'default', 'empty': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'cache_selected_only': 'False', 'warn_error': 'None', 'invocation_command': 'dbt test --profiles-dir .', 'use_colors': 'True', 'log_path': '/Users/preetraut/Documents/saas-revenue-ai-analytics/logs', 'write_json': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'no_print': 'None'}
+[0m12:07:59.747719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '52814211-2573-4d83-ad02-851757804cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b5278e0>]}
+[0m12:07:59.805052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '52814211-2573-4d83-ad02-851757804cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b18cd30>]}
+[0m12:07:59.806940 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m12:07:59.946573 [debug] [MainThread]: checksum: 04c83ee057a648a2f8e380c895ffead170732fa039f068d62b9d36aaeefaf7cc, vars: {}, profile: , target: , version: 1.10.22
+[0m12:08:00.079462 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:08:00.079914 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:08:00.125497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '52814211-2573-4d83-ad02-851757804cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba29ee0>]}
+[0m12:08:00.297799 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/manifest.json
+[0m12:08:00.299707 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/semantic_manifest.json
+[0m12:08:00.322673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '52814211-2573-4d83-ad02-851757804cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10acccc40>]}
+[0m12:08:00.323228 [info ] [MainThread]: Found 3 models, 7 data tests, 456 macros
+[0m12:08:00.323596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52814211-2573-4d83-ad02-851757804cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac80f10>]}
+[0m12:08:00.325040 [info ] [MainThread]: 
+[0m12:08:00.325403 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:08:00.325708 [info ] [MainThread]: 
+[0m12:08:00.326158 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m12:08:00.331415 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_saas_analytics_main'
+[0m12:08:00.390990 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics_main"
+[0m12:08:00.391434 [debug] [ThreadPool]: On list_saas_analytics_main: BEGIN
+[0m12:08:00.391742 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:08:00.402640 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m12:08:00.403019 [debug] [ThreadPool]: Using duckdb connection "list_saas_analytics_main"
+[0m12:08:00.403336 [debug] [ThreadPool]: On list_saas_analytics_main: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "connection_name": "list_saas_analytics_main"} */
+select
+      'saas_analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'saas_analytics'
+  
+[0m12:08:00.412181 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m12:08:00.413547 [debug] [ThreadPool]: On list_saas_analytics_main: ROLLBACK
+[0m12:08:00.415459 [debug] [ThreadPool]: Failed to rollback 'list_saas_analytics_main'
+[0m12:08:00.415827 [debug] [ThreadPool]: On list_saas_analytics_main: Close
+[0m12:08:00.417056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52814211-2573-4d83-ad02-851757804cb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4ed7c0>]}
+[0m12:08:00.417523 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:08:00.417828 [debug] [MainThread]: On master: BEGIN
+[0m12:08:00.418111 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:08:00.418582 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:08:00.418876 [debug] [MainThread]: On master: COMMIT
+[0m12:08:00.419162 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:08:00.419441 [debug] [MainThread]: On master: COMMIT
+[0m12:08:00.419872 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:08:00.420251 [debug] [MainThread]: On master: Close
+[0m12:08:00.422496 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1
+[0m12:08:00.422908 [info ] [Thread-1  ]: 1 of 7 START test not_null_revenue_metrics_region .............................. [RUN]
+[0m12:08:00.423349 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_saas_analytics_main, now test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1)
+[0m12:08:00.423712 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1
+[0m12:08:00.440233 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"
+[0m12:08:00.441290 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1
+[0m12:08:00.460216 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"
+[0m12:08:00.461097 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"
+[0m12:08:00.461482 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1: BEGIN
+[0m12:08:00.461829 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:08:00.462445 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.462792 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"
+[0m12:08:00.463147 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select region
+from "saas_analytics"."main"."revenue_metrics"
+where region is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:08:00.464153 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.468135 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1: ROLLBACK
+[0m12:08:00.468600 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1'
+[0m12:08:00.468951 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1: Close
+[0m12:08:00.469530 [info ] [Thread-1  ]: 1 of 7 PASS not_null_revenue_metrics_region .................................... [[32mPASS[0m in 0.05s]
+[0m12:08:00.470068 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1
+[0m12:08:00.470455 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16
+[0m12:08:00.470938 [info ] [Thread-1  ]: 2 of 7 START test not_null_revenue_metrics_segment ............................. [RUN]
+[0m12:08:00.471474 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_revenue_metrics_region.294d6399a1, now test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16)
+[0m12:08:00.471883 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16
+[0m12:08:00.476429 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"
+[0m12:08:00.477196 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16
+[0m12:08:00.480041 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"
+[0m12:08:00.480761 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"
+[0m12:08:00.481162 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16: BEGIN
+[0m12:08:00.481517 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:08:00.482172 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.482521 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"
+[0m12:08:00.482868 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select segment
+from "saas_analytics"."main"."revenue_metrics"
+where segment is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:08:00.483697 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:08:00.485067 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16: ROLLBACK
+[0m12:08:00.485512 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16'
+[0m12:08:00.485857 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16: Close
+[0m12:08:00.486403 [info ] [Thread-1  ]: 2 of 7 PASS not_null_revenue_metrics_segment ................................... [[32mPASS[0m in 0.01s]
+[0m12:08:00.486924 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16
+[0m12:08:00.487312 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:08:00.487722 [info ] [Thread-1  ]: 3 of 7 START test not_null_stg_customers_customer_id ........................... [RUN]
+[0m12:08:00.488150 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_revenue_metrics_segment.679f7ddf16, now test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m12:08:00.488516 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:08:00.493668 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:08:00.494859 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:08:00.497749 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:08:00.498630 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:08:00.499019 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa: BEGIN
+[0m12:08:00.499358 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:08:00.499972 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.500407 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:08:00.500765 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "saas_analytics"."main"."stg_customers"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:08:00.501609 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:08:00.502972 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa: ROLLBACK
+[0m12:08:00.503423 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m12:08:00.503774 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa: Close
+[0m12:08:00.504340 [info ] [Thread-1  ]: 3 of 7 PASS not_null_stg_customers_customer_id ................................. [[32mPASS[0m in 0.02s]
+[0m12:08:00.504875 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:08:00.505261 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7
+[0m12:08:00.505672 [info ] [Thread-1  ]: 4 of 7 START test not_null_stg_subscriptions_customer_id ....................... [RUN]
+[0m12:08:00.506116 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7)
+[0m12:08:00.506562 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7
+[0m12:08:00.511499 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"
+[0m12:08:00.512519 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7
+[0m12:08:00.515495 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"
+[0m12:08:00.516425 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"
+[0m12:08:00.516791 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7: BEGIN
+[0m12:08:00.517129 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:08:00.517728 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.518069 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"
+[0m12:08:00.518420 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "saas_analytics"."main"."stg_subscriptions"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:08:00.519291 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m12:08:00.520759 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7: ROLLBACK
+[0m12:08:00.521256 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7'
+[0m12:08:00.521655 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7: Close
+[0m12:08:00.522302 [info ] [Thread-1  ]: 4 of 7 PASS not_null_stg_subscriptions_customer_id ............................. [[32mPASS[0m in 0.02s]
+[0m12:08:00.527322 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7
+[0m12:08:00.527802 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91
+[0m12:08:00.528249 [info ] [Thread-1  ]: 5 of 7 START test not_null_stg_subscriptions_subscription_id ................... [RUN]
+[0m12:08:00.528825 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_stg_subscriptions_customer_id.2baac6ebd7, now test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91)
+[0m12:08:00.529228 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91
+[0m12:08:00.534735 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"
+[0m12:08:00.535526 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91
+[0m12:08:00.538429 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"
+[0m12:08:00.539456 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"
+[0m12:08:00.540589 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91: BEGIN
+[0m12:08:00.541107 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:08:00.541739 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.542097 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"
+[0m12:08:00.542461 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select subscription_id
+from "saas_analytics"."main"."stg_subscriptions"
+where subscription_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:08:00.543446 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.545620 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91: ROLLBACK
+[0m12:08:00.547471 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91'
+[0m12:08:00.547999 [debug] [Thread-1  ]: On test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91: Close
+[0m12:08:00.548580 [info ] [Thread-1  ]: 5 of 7 PASS not_null_stg_subscriptions_subscription_id ......................... [[32mPASS[0m in 0.02s]
+[0m12:08:00.549111 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91
+[0m12:08:00.549489 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada
+[0m12:08:00.549895 [info ] [Thread-1  ]: 6 of 7 START test unique_stg_customers_customer_id ............................. [RUN]
+[0m12:08:00.550304 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.not_null_stg_subscriptions_subscription_id.68a3edda91, now test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada)
+[0m12:08:00.550661 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada
+[0m12:08:00.557566 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"
+[0m12:08:00.558432 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada
+[0m12:08:00.561652 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"
+[0m12:08:00.562676 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"
+[0m12:08:00.563075 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada: BEGIN
+[0m12:08:00.563425 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:08:00.564022 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.564358 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"
+[0m12:08:00.564712 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "saas_analytics"."main"."stg_customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:08:00.567931 [debug] [Thread-1  ]: SQL status: OK in 0.003 seconds
+[0m12:08:00.569376 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada: ROLLBACK
+[0m12:08:00.569829 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada'
+[0m12:08:00.570182 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada: Close
+[0m12:08:00.570766 [info ] [Thread-1  ]: 6 of 7 PASS unique_stg_customers_customer_id ................................... [[32mPASS[0m in 0.02s]
+[0m12:08:00.571295 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada
+[0m12:08:00.571686 [debug] [Thread-1  ]: Began running node test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e
+[0m12:08:00.572106 [info ] [Thread-1  ]: 7 of 7 START test unique_stg_subscriptions_subscription_id ..................... [RUN]
+[0m12:08:00.572539 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.saas_revenue_analytics.unique_stg_customers_customer_id.c7614daada, now test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e)
+[0m12:08:00.572910 [debug] [Thread-1  ]: Began compiling node test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e
+[0m12:08:00.577582 [debug] [Thread-1  ]: Writing injected SQL for node "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"
+[0m12:08:00.578529 [debug] [Thread-1  ]: Began executing node test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e
+[0m12:08:00.581333 [debug] [Thread-1  ]: Writing runtime sql for node "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"
+[0m12:08:00.582108 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"
+[0m12:08:00.582479 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e: BEGIN
+[0m12:08:00.582819 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:08:00.583434 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.583776 [debug] [Thread-1  ]: Using duckdb connection "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"
+[0m12:08:00.584132 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e: /* {"app": "dbt", "dbt_version": "1.10.22", "profile_name": "saas_revenue_analytics", "target_name": "dev", "node_id": "test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    subscription_id as unique_field,
+    count(*) as n_records
+
+from "saas_analytics"."main"."stg_subscriptions"
+where subscription_id is not null
+group by subscription_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:08:00.585880 [debug] [Thread-1  ]: SQL status: OK in 0.001 seconds
+[0m12:08:00.587350 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e: ROLLBACK
+[0m12:08:00.587853 [debug] [Thread-1  ]: Failed to rollback 'test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e'
+[0m12:08:00.588225 [debug] [Thread-1  ]: On test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e: Close
+[0m12:08:00.588826 [info ] [Thread-1  ]: 7 of 7 PASS unique_stg_subscriptions_subscription_id ........................... [[32mPASS[0m in 0.02s]
+[0m12:08:00.589375 [debug] [Thread-1  ]: Finished running node test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e
+[0m12:08:00.590466 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:08:00.590841 [debug] [MainThread]: On master: BEGIN
+[0m12:08:00.591142 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:08:00.591740 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m12:08:00.592063 [debug] [MainThread]: On master: COMMIT
+[0m12:08:00.592357 [debug] [MainThread]: Using duckdb connection "master"
+[0m12:08:00.592642 [debug] [MainThread]: On master: COMMIT
+[0m12:08:00.593081 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m12:08:00.593426 [debug] [MainThread]: On master: Close
+[0m12:08:00.593862 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:08:00.594153 [debug] [MainThread]: Connection 'test.saas_revenue_analytics.unique_stg_subscriptions_subscription_id.d45e893a6e' was properly closed.
+[0m12:08:00.594546 [info ] [MainThread]: 
+[0m12:08:00.594901 [info ] [MainThread]: Finished running 7 data tests in 0 hours 0 minutes and 0.27 seconds (0.27s).
+[0m12:08:00.596324 [debug] [MainThread]: Command end result
+[0m12:08:00.620985 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/manifest.json
+[0m12:08:00.622902 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/semantic_manifest.json
+[0m12:08:00.630545 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/preetraut/Documents/saas-revenue-ai-analytics/target/run_results.json
+[0m12:08:00.630950 [info ] [MainThread]: 
+[0m12:08:00.631341 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:08:00.631660 [info ] [MainThread]: 
+[0m12:08:00.631989 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m12:08:00.634726 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.1598718, "process_in_blocks": "0", "process_kernel_time": 0.314939, "process_mem_max_rss": "143802368", "process_out_blocks": "0", "process_user_time": 2.135174}
+[0m12:08:00.635147 [debug] [MainThread]: Command `dbt test` succeeded at 12:08:00.635071 after 1.16 seconds
+[0m12:08:00.635518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a372eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a618dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10beb3b20>]}
+[0m12:08:00.635890 [debug] [MainThread]: Flushing usage events
+[0m12:08:01.261989 [debug] [MainThread]: An error was encountered while trying to flush usage events

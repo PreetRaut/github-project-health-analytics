@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: revenue_metrics
+    description: Revenue metrics by region and customer segment.
+    columns:
+      - name: region
+        tests:
+          - not_null
+      - name: segment
+        tests:
+          - not_null
