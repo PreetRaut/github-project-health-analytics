@@ -1,12 +1,17 @@
 version: 2
 
 models:
-  - name: revenue_metrics
-    description: Revenue metrics by region and customer segment.
+  - name: github_project_health
+    description: Repository health metrics created from GitHub API data.
     columns:
-      - name: region
+      - name: full_name
         tests:
           - not_null
-      - name: segment
-        tests:
-          - not_null
+      - name: stars
+        description: Number of GitHub stars.
+      - name: forks
+        description: Number of forks.
+      - name: avg_issue_resolution_days
+        description: Average time to close issues in days.
+      - name: avg_pr_merge_days
+        description: Average time to merge pull requests in days.

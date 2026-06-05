@@ -1,9 +1,8 @@
+requests
 pandas
-numpy
 duckdb
 dbt-core
 dbt-duckdb
 streamlit
 plotly
-openai
 python-dotenv

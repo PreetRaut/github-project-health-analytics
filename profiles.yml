@@ -1,6 +1,6 @@
-saas_revenue_analytics:
+saas_revenue_ai_analytics:
   target: dev
   outputs:
     dev:
       type: duckdb
-      path: data/saas_analytics.duckdb
+      path: data/github_analytics.duckdb

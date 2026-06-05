@@ -1,19 +1,51 @@
 version: 2
 
 models:
-  - name: stg_customers
+
+  - name: stg_repo
+
     columns:
-      - name: customer_id
+
+      - name: repo_id
+
         tests:
-          - unique
+
           - not_null
 
-  - name: stg_subscriptions
-    columns:
-      - name: subscription_id
-        tests:
           - unique
-          - not_null
-      - name: customer_id
+
+  - name: stg_issues
+
+    columns:
+
+      - name: issue_id
+
         tests:
+
           - not_null
+
+          - unique
+
+  - name: stg_pull_requests
+
+    columns:
+
+      - name: pr_id
+
+        tests:
+
+          - not_null
+
+          - unique
+
+  - name: stg_commits
+
+    columns:
+
+      - name: sha
+
+        tests:
+
+          - not_null
+
+          - unique

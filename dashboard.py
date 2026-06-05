@@ -1,48 +1,109 @@
-import streamlit as st
 import duckdb
-import pandas as pd
+import streamlit as st
 import plotly.express as px
 
-st.set_page_config(page_title="SaaS Revenue Analytics", layout="wide")
+DB_PATH = "data/github_analytics.duckdb"
 
-st.title("SaaS Revenue Analytics Dashboard")
-st.write("A dbt-powered revenue analytics project with CRM-style SaaS data.")
+st.set_page_config(page_title="GitHub Project Health Analytics", layout="wide")
 
-con = duckdb.connect("data/saas_analytics.duckdb")
-df = con.execute("SELECT * FROM revenue_metrics").fetchdf()
-con.close()
+st.title("GitHub Project Health Analytics Dashboard")
+st.caption("Powered by GitHub API, DuckDB, dbt, Streamlit and Plotly")
 
-total_mrr = df["total_mrr"].sum()
-total_arr = df["total_arr"].sum()
-avg_churn = df["churn_rate_percent"].mean()
-customers = df["total_customers"].sum()
+@st.cache_data
+def load_health_metrics():
+    con = duckdb.connect(DB_PATH)
+    df = con.execute("select * from github_project_health").df()
+    con.close()
+    return df
+
+@st.cache_data
+def load_commits():
+    con = duckdb.connect(DB_PATH)
+    df = con.execute("""
+        select
+            date_trunc('day', author_date) as commit_day,
+            count(*) as commits
+        from stg_commits
+        group by 1
+        order by 1
+    """).df()
+    con.close()
+    return df
+
+@st.cache_data
+def load_issues():
+    con = duckdb.connect(DB_PATH)
+    df = con.execute("""
+        select
+            state,
+            count(*) as issue_count
+        from stg_issues
+        group by 1
+    """).df()
+    con.close()
+    return df
+
+try:
+    health = load_health_metrics()
+    commits = load_commits()
+    issues = load_issues()
+except Exception:
+    st.error("Run: python ingest_github.py, then dbt run --profiles-dir .")
+    st.stop()
+
+if health.empty:
+    st.warning("No GitHub data found.")
+    st.stop()
+
+row = health.iloc[0]
+
+st.subheader(row["full_name"])
+st.write(row["description"])
 
 col1, col2, col3, col4 = st.columns(4)
 
-col1.metric("Total Customers", f"{customers:,.0f}")
-col2.metric("MRR", f"€{total_mrr:,.0f}")
-col3.metric("ARR", f"€{total_arr:,.0f}")
-col4.metric("Avg Churn Rate", f"{avg_churn:.2f}%")
+col1.metric("Stars", f"{row['stars']:,.0f}")
+col2.metric("Forks", f"{row['forks']:,.0f}")
+col3.metric("Open Issues", f"{row['open_issues']:,.0f}")
+col4.metric("Contributors Sample", f"{row['contributors_sample']:,.0f}")
 
-st.subheader("MRR by Region")
-fig1 = px.bar(df, x="region", y="total_mrr", color="segment", barmode="group")
-st.plotly_chart(fig1, use_container_width=True)
+col5, col6, col7 = st.columns(3)
 
-st.subheader("Churn Rate by Segment")
-fig2 = px.bar(df, x="segment", y="churn_rate_percent", color="region")
-st.plotly_chart(fig2, use_container_width=True)
+col5.metric("Issues Sample", f"{row['total_issues']:,.0f}")
+col6.metric("PRs Sample", f"{row['total_prs']:,.0f}")
+col7.metric("Commits Sample", f"{row['total_commits']:,.0f}")
 
-st.subheader("Revenue Metrics Table")
-st.dataframe(df)
+st.subheader("Commit Activity")
 
-st.subheader("Automated Business Insight")
-
-highest_churn = df.sort_values("churn_rate_percent", ascending=False).iloc[0]
-best_region = df.groupby("region")["total_mrr"].sum().sort_values(ascending=False).index[0]
-
-st.write(
-    f"The highest churn is in the {highest_churn['segment']} segment in "
-    f"{highest_churn['region']} at {highest_churn['churn_rate_percent']}%. "
-    f"The strongest revenue region is {best_region}. "
-    f"Recommended action: investigate churn drivers in high-risk segments and prioritise expansion in stronger regions."
+fig_commits = px.line(
+    commits,
+    x="commit_day",
+    y="commits",
+    markers=True,
+    title="Daily Commit Activity"
 )
+st.plotly_chart(fig_commits, use_container_width=True)
+
+st.subheader("Issue Status")
+
+fig_issues = px.bar(
+    issues,
+    x="state",
+    y="issue_count",
+    title="Open vs Closed Issues"
+)
+st.plotly_chart(fig_issues, use_container_width=True)
+
+st.subheader("Repository Health Summary")
+
+st.info(
+    f"{row['full_name']} has {row['stars']:,.0f} stars and {row['forks']:,.0f} forks. "
+    f"In the sampled API data, there are {row['total_issues']:,.0f} issues, "
+    f"{row['total_prs']:,.0f} pull requests, and {row['total_commits']:,.0f} commits. "
+    f"The average issue resolution time is {row['avg_issue_resolution_days']} days, "
+    f"and the average PR merge time is {row['avg_pr_merge_days']} days. "
+    f"This helps engineering and product teams monitor repository activity, project health, and delivery velocity."
+)
+
+st.subheader("Raw Health Metrics")
+st.dataframe(health, use_container_width=True)

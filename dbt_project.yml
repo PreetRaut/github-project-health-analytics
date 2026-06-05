@@ -1,13 +1,13 @@
-name: "saas_revenue_analytics"
-version: "1.0.0"
+name: saas_revenue_ai_analytics
+version: 1.0.0
 config-version: 2
 
-profile: "saas_revenue_analytics"
+profile: saas_revenue_ai_analytics
 
 model-paths: ["models"]
 
 models:
-  saas_revenue_analytics:
+  saas_revenue_ai_analytics:
     staging:
       +materialized: view
     marts:
