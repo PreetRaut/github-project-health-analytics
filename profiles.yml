@@ -1,4 +1,4 @@
-saas_revenue_ai_analytics:
+github_project_health_analytics:
   target: dev
   outputs:
     dev:

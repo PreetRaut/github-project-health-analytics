@@ -1,8 +1,8 @@
-name: saas_revenue_ai_analytics
+name: github_project_health_analytics
 version: 1.0.0
 config-version: 2
 
-profile: saas_revenue_ai_analytics
+profile: github_project_health_analytics
 
 model-paths: ["models"]
 
